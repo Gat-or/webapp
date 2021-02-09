@@ -1,0 +1,70 @@
+
+/* banner grid not currently used */
+.banner-grid {
+    background-image: url("https://media4.giphy.com/media/FlodpfQUBSp20/giphy.gif"); /* space gif */
+    background-size: auto;
+    padding: 4rem, 2rem;
+    border-radius: 1%;
+
+    height: 240px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    justify-content: center;
+
+    /* grid styles (rows) */
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(minmax(240px, 1fr));
+}
+
+.alternate-banner {
+    background-image: url("../../images/watching-tv-dark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 4rem, 2rem;
+    border-radius: 1%;
+
+    height: inherit;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    justify-content: center;
+
+    /* grid styles (rows) */
+    display: flex;
+    align-items: center;
+    grid-template-columns: repeat(minmax(240px, 1fr));
+}
+
+.banner-wrapper-div {
+    height: 360px;
+    width: 100%;
+    border-radius: 1%;
+}
+
+
+@media (min-width: 1332px) {
+    .alternate-banner {
+        max-width: 1332px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .banner-wrapper-div {
+        /* background-color: #ffffffec; */  /* lighter shade of homepage background color */
+
+        /* div backgroud color is split 50/50 in order to blend with the image better */
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.790) 50%, rgba(0, 0, 0, 0.830) 50%);
+    }
+}
+
+.banner-button-columns {
+    /* grid styles (columns) */
+    display: grid;
+    align-items: center;
+    padding: 4rem, 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.button-style {
+    margin: 1vw;
+}

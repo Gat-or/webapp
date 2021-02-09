@@ -1,0 +1,41 @@
+.all-rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+.sort-by-button {
+    float: left;
+}
+
+.content-header-grid {
+    display: grid;
+    padding-top: 3vh;
+}
+
+@media (min-width: 713px) {
+    .content-header-grid { 
+        grid-template-columns: repeat(2, minmax(320px, 1fr)); 
+    }
+    .sort-by-button {
+        float: right;
+    }
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .separator h4{
+    padding: 0 2rem; /* creates the space */
+    
+  }
+  
+  .separator .line{
+    flex: 1;
+    height: .5px;
+    background-color: lightgray;
+  }
+

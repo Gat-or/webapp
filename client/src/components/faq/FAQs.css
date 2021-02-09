@@ -1,0 +1,26 @@
+.div-padding{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    display: block;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+.header-hover {
+    cursor: pointer;
+    
+}

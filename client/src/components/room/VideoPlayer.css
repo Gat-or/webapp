@@ -1,0 +1,315 @@
+.react-player-container {
+    /* min-width: 73vw; */
+    width: 100%;
+    min-height: 72vh;
+}
+
+.react-player-wrapper {
+    /* width: 73vw; */
+    width: 100%;
+    height: 72vh;
+    background-color: grey;
+    position: relative;
+}
+.react-player {
+    background:black;
+}
+.mediaControls {
+    display: grid;
+}
+@media (min-width: 200px) {
+    .mediaControls {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.video-bar {
+    /* display: flex; */
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    background-color: #343A40;
+    border-top: 2px solid #777777;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.video-bar a {
+    margin: 3px 0px 3px 3px;
+    height: 90%;
+    line-height: 90%;
+    text-align: center;
+	background-color:#007BFF;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:9px 23px;
+	text-decoration:none;
+}
+
+.video-bar a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0065d1;
+}
+
+.volume-button-container {
+    color: white;
+}
+
+.volume-button-container:hover {
+    cursor: pointer;
+}
+
+.load-video-button-wrapper {
+    width:50%;
+}
+.load-video-button {
+    margin: 3px 0px 3px 3px;
+    height: 90%;
+}
+
+.viewers-wrapper {
+    width: 100%;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    float: left;
+}
+.viewers {
+    
+    width: 100%;
+    color: #cccccc;
+    text-align: right;
+    padding-right: 5%;
+    position:absolute;
+    top: 0; bottom: 5px; left: 0; right: 0;
+    margin: auto;
+    height: 20px;
+    
+}
+
+.room-settings-button {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 5px;
+    position: flex;
+    height: 100%;
+}
+
+.form-room-type {
+    display: flex;
+}
+
+.public-form-label, .private-form-label {
+    margin-right: 10px;
+}
+
+.public-form-checkbox {
+    margin-right: 20px;
+}
+
+#nonhost-video-overlay {
+    position: absolute; /* Sit on top of the react-player-wrapper */
+    display: block; /* activated by default */
+    width: 100%; /* Full width (cover the video) */
+    height: 100%; /* Full height (cover the video) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.0); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#unmute-video-overlay {
+    position: absolute; /* Sit on top of the react-player-wrapper */
+    display: block; /* activated by default */
+    width: 100%; /* Full width (cover the video) */
+    height: 100%; /* Full height (cover the video) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#unmute-video-overlay:hover {
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+#overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+/* change height of react player for screens wider than 1600px*/
+@media (min-width: 1600px) {
+    @media (min-height: 600px) {    
+        .react-player-container {
+            min-height: 68vh;
+        }
+        .react-player-wrapper {
+            height: 68vh;
+        }
+    }
+    @media (min-height: 700px) {    
+        .react-player-container {
+            min-height: 72.5vh;
+        }
+        .react-player-wrapper {
+            height: 72.5vh;
+        }
+    }
+    @media (min-height: 800px) {    
+        .react-player-container {
+            min-height: 74vh;
+        }
+        .react-player-wrapper {
+            height: 74vh;
+        }
+    }
+    @media (min-height: 900px) {    
+        .react-player-container {
+            min-height: 76vh;
+        }
+        .react-player-wrapper {
+            height: 76vh;
+        }
+    }
+    @media (min-height: 1000px) {    
+        .react-player-container {
+            min-height: 78vh;
+        }
+        .react-player-wrapper {
+            height: 78vh;
+        }
+    }
+    @media (min-height: 1065px) {    
+        .react-player-container {
+            min-height: 79.5vh;
+        }
+        .react-player-wrapper {
+            height: 79.5vh;
+        }
+    }
+    @media (min-height: 1135px) {    
+        .react-player-container {
+            min-height: 81vh;
+        }
+        .react-player-wrapper {
+            height: 81vh;
+        }
+    }
+    @media (min-height: 1185px) {    
+        .react-player-container {
+            min-height: 83vh;
+        }
+        .react-player-wrapper {
+            height: 83vh;
+        }
+    }
+}
+
+@media (max-width: 1600px){
+    .load-video-modal {
+        min-width: 80vw;
+        max-height: 70vh;
+    }
+    
+}
+
+
+/* change height of react player for screens between 992 and 1600px*/
+@media (max-width: 1600px) and (min-width:992px) {
+    @media (min-height: 600px) {    
+        .react-player-container {
+            min-height: 67vh;
+        }
+        .react-player-wrapper {
+            height: 67vh;
+        }
+    }
+    @media (min-height: 650px) {    
+        .react-player-container {
+            min-height: 69vh;
+        }
+        .react-player-wrapper {
+            height: 69vh;
+        }
+    }
+    @media (min-height: 700px) {    
+        .react-player-container {
+            min-height: 71vh;
+        }
+        .react-player-wrapper {
+            height: 71vh;
+        }
+    }
+    @media (min-height: 750px) {    
+        .react-player-container {
+            min-height: 72.5vh;
+        }
+        .react-player-wrapper {
+            height: 72.5vh;
+        }
+    }
+    @media (min-height: 800px) {    
+        .react-player-container {
+            min-height: 74vh;
+        }
+        .react-player-wrapper {
+            height: 74vh;
+        }
+    }
+    @media (min-height: 900px) {    
+        .react-player-container {
+            min-height: 77vh;
+        }
+        .react-player-wrapper {
+            height: 77vh;
+        }
+    }
+    @media (min-height: 1000px) {    
+        .react-player-container {
+            min-height: 79.5vh;
+        }
+        .react-player-wrapper {
+            height: 79.5vh;
+        }
+    }
+    @media (min-height: 1185px) {    
+        .react-player-container {
+            min-height: 83vh;
+        }
+        .react-player-wrapper {
+            height: 83vh;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .video-player-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .react-player-wrapper{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+

@@ -1,0 +1,28 @@
+{
+  "name": "m2",
+  "version": "1.0.1",
+  "description": "Milestone 2",
+  "main": "index.js",
+  "scripts": {
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSC-648-SFSU/csc-648-848-04-jose-fall-2020-06.git"
+  },
+  "author": "Team06",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSC-648-SFSU/csc-648-848-04-jose-fall-2020-06/issues"
+  },
+  "homepage": "https://github.com/CSC-648-SFSU/csc-648-848-04-jose-fall-2020-06#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "pm2": "^4.4.1"
+  }
+}

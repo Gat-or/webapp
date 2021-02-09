@@ -1,0 +1,87 @@
+
+.room-content-container {
+    background-color: #f8f8ff;
+    display: flex;
+    flex-direction: row;
+}
+
+.roompage-left-side {
+    overflow-y: scroll;
+    height: 92.3vh;
+    min-width: 78vw;
+}
+
+.roompage-right-side {
+    /* height: 92.3vh; */
+    min-width: 22vw;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+@media (max-width: 991px) {
+    .room-content-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .roompage-left-side {
+        height: 50vh;
+        width: 100%;
+        overflow-y: auto;
+    }
+    .roompage-right-side {
+        /* height: 100vh; */
+        width: 100%;
+        overflow-y: hidden;
+    }
+    @media (min-height: 780px) {
+        .roompage-left-side {
+            height: 53vh;
+        }
+    }
+    @media (min-height: 880px) {
+        .roompage-left-side {
+            height: 55vh;
+        }
+    }
+    @media (min-height: 1000px) {
+        .roompage-left-side {
+            height: 59vh;
+        }
+    }
+    @media (min-height: 1100px) {
+        .roompage-left-side {
+            height: 63vh;
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    @media (min-height: 950px) {
+        .roompage-left-side {
+            overflow-y: scroll;
+            height: 94vh;
+            min-width: 78vw;
+        }
+    }
+    @media (min-height: 1100px) {
+        .roompage-left-side {
+            overflow-y: scroll;
+            height: 95.3vh;
+            min-width: 78vw;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .roompage-left-side {
+        min-width: 82vw;
+    }
+    
+    .roompage-right-side {
+        min-width: 18vw;
+    }
+}

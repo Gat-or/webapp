@@ -1,0 +1,25 @@
+.default-rooms-grid {
+    display: grid;
+    margin: auto;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 713px) {
+    .default-rooms-grid { grid-template-columns: repeat(2, minmax(320px, 1fr)); }
+}
+
+@media (min-width: 1078px) {
+    .default-rooms-grid { grid-template-columns: repeat(3, minmax(320px, 1fr)); }
+}
+
+@media (min-width: 1444px) {
+    .default-rooms-grid { grid-template-columns: repeat(4, minmax(320px, 1fr)); }
+}
+
+@media (min-width: 1809px) {
+    .default-rooms-grid { grid-template-columns: repeat(5, minmax(320px, 1fr)); }
+}
+
+@media (min-width: 2174px) {
+    .default-rooms-grid { grid-template-columns: repeat(6, minmax(320px, 1fr)); }
+}
